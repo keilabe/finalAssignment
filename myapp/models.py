@@ -20,6 +20,12 @@ class Destinations(models.Model):
     eprice = models.IntegerField(default=0)
     description = models.TextField()
     country = models.CharField(max_length=20)
+<<<<<<< HEAD
+=======
+    # caption = models.CharField(max_length=255)
+    # likes = models.ManyToManyField(User, related_name='image_likes')
+    # created_at = models.DateTimeField(auto_now_add=True)
+>>>>>>> 6fc92ba (My Bootcamp-SP project)
 
     def __str__(self):
         return self.dname
@@ -76,3 +82,12 @@ class ContactMessage(models.Model):
 
         def __str__(self):
             return self.name
+<<<<<<< HEAD
+=======
+
+# class Comment(models.Model):
+#     image = models.ForeignKey(Image, on_delete=models.CASCADE, related_name='comments')
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     text = models.TextField()
+#     created_at = models.DateTimeField(auto_now_add=True)
+>>>>>>> 6fc92ba (My Bootcamp-SP project)

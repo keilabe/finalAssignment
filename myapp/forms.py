@@ -19,3 +19,12 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = ContactMessage
         fields = ['name', 'email', 'message']
+<<<<<<< HEAD
+=======
+
+#
+# class CommentForm(forms.ModelForm):
+#     class Meta:
+#         model = Comment
+#         fields = ['text']
+>>>>>>> 6fc92ba (My Bootcamp-SP project)

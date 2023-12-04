@@ -260,7 +260,37 @@ def contact_view(request):
 
     return render(request, 'contact.html', {'form': form})
 
+<<<<<<< HEAD
+=======
+# def like_image(request, image_id):
+#     image = get_object_or_404(Image, pk=image_id)
+#     if request.user in image.likes.all():
+#         image.likes.remove(request.user)
+#     else:
+#         image.likes.add(request.user)
+#     return redirect('image_detail', image_id=image.id)
+
+>>>>>>> 6fc92ba (My Bootcamp-SP project)
 #
 # def translate_view(request):
 #     if request.method == 'POST':
 #         text_to_translate =
+<<<<<<< HEAD
+=======
+
+# def image_detail(request, image_id):
+#     image = get_object_or_404(Image, pk=image_id)
+#     comments = image.comments.all()
+#     comment_form = CommentForm()
+#
+#     if request.method == 'POST':
+#         comment_form = CommentForm(request.POST)
+#         if comment_form.is_valid():
+#             new_comment = comment_form.save(commit=False)
+#             new_comment.image = image
+#             new_comment.user = request.user
+#             new_comment.save()
+#             return redirect('image_detail', image_id=image.id)
+#
+#     return render(request, 'image_detail.html', {'image': image, 'comments': comments, 'comment_form': comment_form})
+>>>>>>> 6fc92ba (My Bootcamp-SP project)
